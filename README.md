@@ -102,7 +102,7 @@ Now, we can do it using:
 
 or more clear:
 
-> `pull(1 <- _ is +(
-    2 <- fib(1 <- _ is N-1),
-    2 <- fib(1 <- _ is N-2)),
-F)`
+    pull(1 <- _ is +(
+        2 <- fib(1 <- _ is N-1),
+        2 <- fib(1 <- _ is N-2)),
+    F)
