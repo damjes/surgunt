@@ -1,0 +1,4 @@
+:- [anonFun].
+:- [anonPred].
+:- [compose].
+:- [pull].
