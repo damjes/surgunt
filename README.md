@@ -98,11 +98,11 @@ We could compute nth Fibonacci number using:
 
 Now, we can do it using:
 
-    pull(1 <- _ is (2 <- fib(1 <- _ is N-1)) + (2 <- fib(1 <- _ is N-2)), F)
+    pull(1 <- _ is (2 <- fib(1 <- _ is N-1, _)) + (2 <- fib(1 <- _ is N-2, _)), F)
 
 or more clear:
 
     pull(1 <- _ is +(
-        2 <- fib(1 <- _ is N-1),
-        2 <- fib(1 <- _ is N-2)),
+        2 <- fib(1 <- _ is N-1, _),
+        2 <- fib(1 <- _ is N-2, _)),
     F)
